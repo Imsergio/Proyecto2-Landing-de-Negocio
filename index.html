@@ -9,6 +9,10 @@
   <!-- icon -->
   <link rel="shortcut icon" href="assets/favicon.png" type="image/x-icon">
   <link href="style.css" rel="stylesheet">
+  <link href="theme.css" rel="stylesheet">
+  <link href="./css/header.css" rel="stylesheet">
+  <!-- Rexicons -->
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
 </head>
 
 <body class="grid">
@@ -18,22 +22,34 @@
       <nav class="flex">
         <div class="flex links">
           <div class="logo">
-            <a href="#" class="nav__logo" id="nav-logo">
+            <a href="#" class="logo__img" id="nav-logo">
               <img src="assets/favicon.png" alt="Logo image sushi">
             </a>
           </div>
           <ul class="flex">
-            <li><a href="#">Inicio</a></li>
-            <li><a href="#">Nosotros</a></li>
-            <li><a href="#">Servicios</a></li>
-            <li><a href="#">Blog</a></li>
-            <li><a href="#">Contacto</a></li>
+            <li><a class="nav__link" href="#">Inicio</a></li>
+            <li><a class="nav__link" href="#">Nosotros</a></li>
+            <li><a class="nav__link" href="#">Servicios</a></li>
+            <li><a class="nav__link" href="#">Blog</a></li>
+            <li><a class="nav__link" href="#">Contacto</a></li>
           </ul>
         </div>
-        <div>
-          <a href="#">Iniciar sesión</a>
+        <!-- Close Button -->
+        <!-- <div class="flex nav__close" id="nav-close">
+          <i class="ri-close-line"></i>
+        </div> -->
+        <div class="flex nav__buttons">
+          <!-- Theme change button -->
+          <div class="flex nav__theme">
+            <i class="ri-moon-line change-theme" id="theme-button"></i>
+          </div>
+          <!-- Toggle button -->
+          <div class="flex nav__toggle" id="nav-toggle">
+            <i class="ri-apps-2-line"></i>
+          </div>
         </div>
-      </nav>
+    </div>
+    </nav>
     </div>
   </header>
   <main class="grid">
@@ -55,22 +71,25 @@
             </div>
             <div class="hero__text">
               <p class="hero__description">
-                Enjoy a good dinner with the best dishes
-                in restaurant and improve your day.
+                Disfruta una cena exquisita cena con nuestros
+                excelentes platillos que mejoraran tu día.
               </p>
               <a href="#" class="button">
-                Order Now <i class="ri-arrow-right-line"></i>
+                Order Now <i class="ri-arrow-right-line">→</i>
               </a>
             </div>
           </div>
         </div>
-      <div>
-
+        <div>
+          <img src="assets/leaf-branch-4.png" alt="nav image" class="jumbotron__img-1">
+          <img src="assets/leaf-branch-1.png" alt="nav image" class="jumbotron__img-2">
     </section>
   </main>
   <footer>
     footer
   </footer>
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
 
 </html>

@@ -14,6 +14,7 @@
   --title-font: "Lora", serif;
   --subtitle-font: "Dancing Script", cursive;
   --text-color:hsl(19, 16%, 15%);
+  --hover-color: hsl(19, 64%, 54%);
 }
 html{
   box-sizing: border-box; /* 1 rem = 10px */
@@ -48,50 +49,23 @@ max-width: 100%;
   flex-wrap: wrap;
 }
 
+/* main */
 main, header{
   grid-template-columns: 1fr;
   justify-content: center;
   background: var(--background);
 }
-
-.header-box{
-  background: var(--background);
-    grid-template-columns: 0.9fr;
-}
-nav{
-  justify-content: space-between;
-}
-nav img{
-  max-width: 40px;
-}
-nav ul{
-  display: flex;
-  flex-direction: row;
-  gap: 1rem;
-}
-nav ul li{
-  padding: 5px;
-}
-nav ul li a{
-  padding: 5px;
+main{
+  margin-top: 5.5rem;
 }
 
-.logo{
-  display: flex;
-  align-items: center;
-  padding: 0.2rem;
-}
-.logo a {
-  padding: 1rem 2rem;
-}
-
-
-
-/* main */
 .jumbotron{
   width: 100%;
   background: linear-gradient(45deg, #ffa477,#ffdbc9,#ffdbc9, #ffdbc9);
   padding: 3rem 0;
+  overflow: hidden;
+  justify-items: center;
+  position: relative;
 }
 .hero {
   grid-template-columns: 0.9fr;
@@ -132,18 +106,47 @@ nav ul li a{
 .hero__title img{
   width: 40px; 
 }
-.jumbotron{
-  justify-items: center;
+
+.jumbotron__img-1 {
+  position: absolute;
+  width: 7.5rem;
+  top: 2.75rem;
+  left: -1rem;
+  transform: rotate(77deg);
+  opacity: 0.3;
 }
 
+.jumbotron__img-2 {
+  position: absolute;
+  width: 8rem;
+  right: 1rem;
+  bottom: 0;
+  opacity: 0.2;
+  transform: rotate(317deg);
+}
 
+.button{
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 1rem;
+  background-color: var(--hover-color);
+  padding: 1rem 1.5rem;
+  border-radius: 1rem;
+  color: white;
+  font-weight: var(--font-medium);
+  margin: 2rem 0;
+  font-family: var(--body-font);
+  border: none;
+}
 
 @media screen and (min-width: 901px) {
   .jumbotron{
-    padding: 4rem 0;
+    padding: 6rem 0;
   }
   .hero__title, .hero__text,.hero__description,.hero__data{
     align-items: flex-start;
     text-align: left;
   }
+  
 }
