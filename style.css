@@ -55,9 +55,6 @@ main, header{
   justify-content: center;
   background: var(--background);
 }
-main{
-  margin-top: 5.5rem;
-}
 
 .jumbotron{
   width: 100%;
@@ -118,7 +115,7 @@ main{
 
 .jumbotron__img-2 {
   position: absolute;
-  width: 8rem;
+  width: 5rem;
   right: 1rem;
   bottom: 0;
   opacity: 0.2;
