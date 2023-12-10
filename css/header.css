@@ -1,9 +1,16 @@
 header {
-  position: relative;
+  position: fixed;
   width: 100%;
   background-color: var(--body-color);
   top: 0;
+  left: 0;
+  z-index: var(--z-fixed);
+  transition: box-shadow 0.3s, background 0.4s;
   z-index: 10;
+}
+/* agragar sombra al header al bajar el scroll */
+.bg-header{
+  box-shadow: 0 2px 5px 1px hsl(19deg 64% 24% / 19%);
 }
 .header-box{
   background: var(--background);
