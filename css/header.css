@@ -22,6 +22,7 @@ nav ul{
   width: 100%;
   flex-direction: column;
   text-align: center;
+  transition: all 1s;
 }
 .logo__img {
   display: flex;
@@ -72,7 +73,7 @@ nav ul li{
   background-color: var(--body-color);
   width: 100%;
   box-shadow: 0 8px 20px hsla(19, 64%, 24%, 0.1);
-  transition: top 0.4s;
+  transition: top 0.7s;
   background: var(--background);
 }
 /* Show menu */
@@ -81,16 +82,6 @@ nav ul li{
 }
 
 @media screen and (max-width: 767px) {
-  .nav__menu {
-      text-align: center;
-      position: fixed;
-      /* top: -100%; */
-      left: 0;
-      background-color: var(--body-color);
-      width: 100%;
-      box-shadow: 0 8px 20px hsla(19, 64%, 24%, 0.1);
-      padding-block: 3.5rem;
-      transition: top 0.4s;
-  }
+
   
 }
