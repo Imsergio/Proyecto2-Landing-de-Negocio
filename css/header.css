@@ -25,6 +25,8 @@ nav ul{
 }
 .logo__img {
   display: flex;
+  align-items: center;
+  font-family: var(--title-font);
 }
 nav ul li{
   width: 100%;
@@ -74,7 +76,7 @@ nav ul li{
   background: var(--background);
 }
 /* Show menu */
-.show-menu {
+.show-menu .menu {
   top: 0;
 }
 
