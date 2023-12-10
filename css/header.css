@@ -14,7 +14,7 @@ nav{
   justify-content: space-between;
 }
 nav ul{
-  padding: 2rem 0 1rem 0;
+  padding: 3rem 0 2rem 0;
   position: absolute;
   z-index: 10;
   top: 0;
