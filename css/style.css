@@ -13,6 +13,7 @@
   --body-font: "Poppins", sans-serif;
   --title-font: "Lora", serif;
   --subtitle-font: "Dancing Script", cursive;
+  --small-font-size: 1.4rem;
   --text-color:hsl(19, 16%, 15%);
   --hover-color: hsl(19, 64%, 54%);
 }
@@ -56,7 +57,7 @@ main, header{
   background: var(--background);
 }
 main{
-  margin: 5rem 0px
+  margin: 5rem 0 0 0;
 }
 .jumbotron{
   width: 100%;
@@ -100,7 +101,8 @@ main{
   text-align: center;
 }
 .hero__description {
-  max-width: 40rem;
+  max-width: 35rem;
+  font-size: var(--small-font-size);
 }
 .hero__title img{
   width: 40px; 

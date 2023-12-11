@@ -1,7 +1,6 @@
 header {
   position: fixed;
   width: 100%;
-  background-color: var(--body-color);
   top: 0;
   left: 0;
   z-index: var(--z-fixed);
@@ -45,7 +44,7 @@ nav ul li{
   align-items: center;
   justify-content: center;
   padding: 0.5rem 0;
-  font-family: var(--body-font);
+  font-size: var(--small-font-size);
 }
 .nav__link:hover {
   color: var(--hover-color);
