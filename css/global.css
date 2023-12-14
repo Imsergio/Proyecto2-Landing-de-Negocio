@@ -1,0 +1,81 @@
+/*=============== GOOGLE FONTS ===============*/
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Lora:wght@500;600&family=Poppins:wght@400;500&display=swap");
+
+* {
+  text-decoration: none;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --background: hsl(18deg 100% 96.08%);
+  /* fuente */
+  --body-font: "Poppins", sans-serif;
+  --title-font: "Lora", serif;
+  --subtitle-font: "Dancing Script", cursive;
+  --small-font-size: 1.4rem;
+  --text-color: hsl(19, 16%, 15%);
+  --hover-color: hsl(19, 64%, 54%);
+  --font-size: 2.6rem;
+}
+
+html {
+  box-sizing: border-box;
+  /* 1 rem = 10px */
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: var(--body-font);
+}
+
+a {
+  cursor: pointer;
+  color: var(--text-color);
+  font-family: sans-serif;
+}
+
+a:hover {
+  opacity: 0.8;
+  ;
+}
+
+img {
+  max-width: 100%;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-content: center;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+section {
+  padding: 3rem 0;
+}
+
+.section__espacio {
+  display: grid;
+  justify-content: center;
+}
+
+.section__title {
+  display: grid;
+  font-family: var(--title-font);
+}
+
+.section__subtitle {
+  display: block;
+  font-family: var(--subtitle-font);
+  color: var(--hover-color);
+  font-size: var(--font-size);
+}

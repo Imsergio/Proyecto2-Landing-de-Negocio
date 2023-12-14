@@ -7,19 +7,23 @@ header {
   transition: box-shadow 0.3s, background 0.4s;
   z-index: 10;
 }
+
 /* agragar sombra al header al bajar el scroll */
-.bg-header{
+.bg-header {
   box-shadow: 0 2px 5px 1px hsl(19deg 64% 24% / 19%);
 }
-.header-box{
+
+.header-box {
   background: var(--background);
-    grid-template-columns: 0.9fr;
-    padding: 1rem 0;
+  grid-template-columns: 0.9fr;
+  padding: 1rem 0;
 }
-nav{
+
+nav {
   justify-content: space-between;
 }
-nav ul{
+
+nav ul {
   padding: 3rem 0 2rem 0;
   position: absolute;
   z-index: 10;
@@ -30,15 +34,18 @@ nav ul{
   text-align: center;
   transition: all 1s;
 }
+
 .logo__img {
   display: flex;
   align-items: center;
   font-family: var(--title-font);
 }
-nav ul li{
+
+nav ul li {
   width: 100%;
 }
-.nav__link{
+
+.nav__link {
   width: 100%;
   display: flex;
   align-items: center;
@@ -46,32 +53,38 @@ nav ul li{
   padding: 0.5rem 0;
   font-size: var(--small-font-size);
 }
+
 .nav__link:hover {
   color: var(--hover-color);
 }
-.nav__buttons{
+
+.nav__buttons {
   display: flex;
   gap: 0.5rem;
   line-height: normal;
 }
-.nav__btn{
-    display: flex;
-    width: 16px;
-    height: 16px;
-    cursor: pointer;
-    padding: 0.5rem;
-    border-radius: 10px;
+
+.nav__btn {
+  display: flex;
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+  padding: 0.5rem;
+  border-radius: 10px;
 }
-.nav__btn:hover{
+
+.nav__btn:hover {
   background-color: #fdd0ba;
 }
+
 .nav__close {
   position: absolute;
   top: 1rem;
   right: 2rem;
   z-index: 10;
 }
-.menu{
+
+.menu {
   text-align: center;
   position: fixed;
   top: -100%;
@@ -82,12 +95,8 @@ nav ul li{
   transition: top 0.7s;
   background: var(--background);
 }
+
 /* Show menu */
 .show-menu .menu {
   top: 0;
-}
-
-@media screen and (max-width: 767px) {
-
-  
 }

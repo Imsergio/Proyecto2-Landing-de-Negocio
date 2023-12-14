@@ -1,75 +1,28 @@
-/*=============== GOOGLE FONTS ===============*/
-@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Lora:wght@500;600&family=Poppins:wght@400;500&display=swap");
-
-*{
-  text-decoration: none;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-:root{
-  --background: hsl(18deg 100% 96.08%);
-  /* fuente */
-  --body-font: "Poppins", sans-serif;
-  --title-font: "Lora", serif;
-  --subtitle-font: "Dancing Script", cursive;
-  --small-font-size: 1.4rem;
-  --text-color:hsl(19, 16%, 15%);
-  --hover-color: hsl(19, 64%, 54%);
-}
-html{
-  box-sizing: border-box; /* 1 rem = 10px */
-  font-size: 62.5%;
-  scroll-behavior: smooth;
-}
-body{
-  font-size: 1.6rem;
-  font-family: var(--body-font);
-}
-
-a{
-  cursor: pointer;
-  color: var(--text-color);
-  font-family: sans-serif;
-}
-a:hover{
-  opacity: 0.8;;
-}
-
-img{
-max-width: 100%;
-}
-.grid{
-  display: grid;
-  grid-template-columns: 1fr;
-  justify-content: center;
-}
-.flex{
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-}
-
 /* main */
-main, header{
+main,
+header {
   grid-template-columns: 1fr;
   justify-content: center;
   background: var(--background);
 }
-main{
+
+main {
   margin: 5rem 0 0 0;
 }
-.jumbotron{
+
+.jumbotron {
   width: 100%;
-  background: linear-gradient(45deg, #ffa477,#ffdbc9,#ffdbc9, #ffdbc9);
+  background: linear-gradient(45deg, #ffa477, #ffdbc9, #ffdbc9, #ffdbc9);
   padding: 3rem 0;
   overflow: hidden;
   justify-items: center;
   position: relative;
 }
+
 .hero {
   grid-template-columns: 0.9fr;
 }
+
 .hero__content {
   display: flex;
   gap: 2rem;
@@ -78,34 +31,41 @@ main{
   justify-content: space-evenly;
   width: 100%;
 }
+
 .hero__data {
   display: flex;
   flex-direction: column;
   gap: 2rem;
   max-width: 400px;
 }
-.hero__h1{
+
+.hero__h1 {
   font-family: var(--title-font);
 }
+
 .hero__h1 div {
   flex-direction: row;
   justify-content: start;
   gap: 1rem;
 }
 
-.hero__title, .hero__text,.hero__description{
+.hero__title,
+.hero__text,
+.hero__description {
   flex-direction: column;
   display: flex;
   justify-items: center;
   align-items: center;
   text-align: center;
 }
+
 .hero__description {
   max-width: 35rem;
   font-size: var(--small-font-size);
 }
-.hero__title img{
-  width: 40px; 
+
+.hero__title img {
+  width: 40px;
 }
 
 .jumbotron__img-1 {
@@ -126,7 +86,7 @@ main{
   transform: rotate(317deg);
 }
 
-.button{
+.button {
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -141,13 +101,172 @@ main{
   border: none;
 }
 
+/*=============== Blog ===============*/
+
+.blog__content {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.blog__footer img {
+  width: 40px;
+  border-radius: 20px;
+}
+
+.blog__autor {
+  align-items: center;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  font-size: var(--small-font-size);
+}
+
+.popular__card {
+  display: flex;
+  flex-direction: column;
+  max-width: 36rem;
+  position: relative;
+  background-color: var(--container-color);
+  padding: 3rem 2rem 1.5rem;
+  box-shadow: 0 8px 20px hsla(19, 64%, 48%, 0.08);
+  border-radius: 1rem;
+  text-align: center;
+  margin: auto;
+}
+
+.popular__img {
+  width: 220px;
+  margin: 0 auto;
+  transition: transform 0.4s;
+}
+
+.popular__name {
+  font-size: var(--h3-font-size);
+  font-family: var(--title-font);
+  margin-bottom: 0.25rem;
+}
+
+.popular__title {
+  justify-self: center;
+}
+
+.popular__description {
+  font-size: var(--smaller-font-size);
+  margin-bottom: 1rem;
+  max-width: 300px;
+  text-align: justify;
+}
+
+.flex.autor {
+  gap: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.popular__button {
+  background-color: var(--first-color);
+  border: none;
+  outline: none;
+  text-wrap: nowrap;
+  color: var(--hover-color);
+  font-size: 1.25rem;
+  cursor: pointer;
+}
+
+.popular__button:hover {
+  background-color: var(--first-color-alt);
+}
+
+.popular__card:hover .popular__img {
+  transform: translateY(-0.25rem);
+}
+
+/*=============== Suscripción ===============*/
+
+.suscripcion__content {
+  flex-direction: column;
+  position: relative;
+  background-color: hsl(19, 24%, 15%);
+  border-radius: 2.5rem;
+  padding: 6rem 1rem;
+  margin: 1rem;
+  text-align: center;
+  overflow: hidden;
+}
+.suscripcion__img {
+  width: 120px;
+  position: absolute;
+  top: -3.5rem;
+  left: -6rem;
+}
+
+
+.suscripcion__data .section__title {
+  color: white;
+  margin-bottom: 2rem;
+}
+
+.suscripcion__form {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  background-color: white;
+  padding: 1rem 0 1rem 0rem;
+  border-radius: 2rem;
+  row-gap: 1rem;
+  max-width: 400px;
+  margin: auto;
+}
+
+.suscripcion__input,
+.suscripcion__button {
+  font-family: var(--body-font);
+  border: none;
+  outline: none;
+}
+
+.suscripcion__input {
+  width: 90%;
+  color: var(--text-color);
+  cursor: pointer;
+  padding: 1rem;
+  border-radius: 2rem;
+  margin: auto;
+}
+
+.suscripcion__button {
+  margin: auto;
+  cursor: pointer;
+  width: 90%;
+}
+
+.suscripcion__spinach {
+  width: 30px;
+  position: absolute;
+  right: 0;
+  bottom: -1rem;
+  transform: rotate(45deg);
+}
+
+
+
 @media screen and (min-width: 901px) {
-  .jumbotron{
+  .jumbotron {
     padding: 6rem 0;
   }
-  .hero__title, .hero__text,.hero__description,.hero__data{
+
+  .hero__title,
+  .hero__text,
+  .hero__description,
+  .hero__data {
     align-items: flex-start;
     text-align: left;
   }
-  
+
+  .blog__box {
+    grid-template-columns: 0.9fr;
+  }
+
 }

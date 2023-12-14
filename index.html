@@ -8,6 +8,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- icon -->
   <link rel="shortcut icon" href="assets/favicon.png" type="image/x-icon">
+  <!-- estilos -->
+  <link href="./css/global.css" rel="stylesheet">
   <link href="./css/style.css" rel="stylesheet">
   <link href="./css/theme.css" rel="stylesheet">
   <link href="./css/header.css" rel="stylesheet">
@@ -81,94 +83,211 @@
             </div>
           </div>
         </div>
-        <div>
-          <img src="assets/leaf-branch-4.png" alt="nav image" class="jumbotron__img-1">
-          <img src="assets/leaf-branch-1.png" alt="nav image" class="jumbotron__img-2">
+        <img src="assets/leaf-branch-4.png" alt="nav image" class="jumbotron__img-1">
+        <img src="assets/leaf-branch-1.png" alt="nav image" class="jumbotron__img-2">
+      </div>
+    </section>
+    <section class="blog">
+      <div class="blog__box grid">
+        <div class="section__espacio">
+          <span class="section__subtitle">Nuestro blog</span>
+          <h2 class="section__title">Entradas populares</h2>
+        </div>
+        <div class="blog__content">
+          <article class="popular__card">
+            <img src="assets/popular-onigiri.png" alt="popular image" class="popular__img">
+            <h3 class="popular__name">Onigiri</h3>
+            <p class="popular__description">El onigiri, también conocido como omusubi, es un plato japonés que consiste
+              en una bola de arroz rellena o mezclada con otros ingredientes que...
+              <span>
+                <a class="popular__button">
+                  leer más
+                </a>
+              </span>
+            </p>
+            <div class="flex autor">
+              <a href="#" class="blog__footer">
+                <img src="./assets/about-sushi-title.png" alt="Roel Aufderehar">
+              </a>
+              <div class="flex blog__autor">
+                <p class="text-sm font-medium text-gray-900">
+                  <a href="#" class="hover:underline">
+                    Sergio Uh Márquez
+                  </a>
+                </p>
+                <div class="flex space-x-1 text-sm text-gray-500">
+                  <time datetime="2020-03-16">
+                    Dic 01, 2023
+                  </time>
+                </div>
+              </div>
+            </div>
+          </article>
+          <article class="popular__card">
+            <img src="assets/popular-spring-rols.png" alt="popular image" class="popular__img">
+            <h3 class="popular__name">Spring rolls</h3>
+            <p class="popular__description">El rollito de primavera, arrollado primavera o chun kun, parecido a la
+              lumpiá, es un rollo elaborado de una pasta relleno de diferentes verduras picadas al estilo juliana
+              revuelto todo ello...
+              <span>
+                <a class="popular__button">
+                  leer más
+                </a>
+              </span>
+            </p>
+            <div class="flex autor">
+              <a href="#" class="blog__footer">
+                <img src="./assets/about-sushi-title.png" alt="Roel Aufderehar">
+              </a>
+              <div class="flex blog__autor">
+                <p class="text-sm font-medium text-gray-900">
+                  <a href="#" class="hover:underline">
+                    Sergio Uh Márquez
+                  </a>
+                </p>
+                <div class="flex space-x-1 text-sm text-gray-500">
+                  <time datetime="2020-03-16">
+                    Dic 01, 2023
+                  </time>
+                </div>
+              </div>
+            </div>
+
+          </article>
+          <article class="popular__card">
+            <img src="assets/popular-sushi-rolls.png" alt="popular image" class="popular__img">
+            <h3 class="popular__name">Sushi rolls</h3>
+            <p class="popular__description">es un maki-sushi, una clase de sushi, en ocasiones realizado de adentro
+              hacia afuera uramaki (arroz por fuera y los ingredientes dentro), conteniendo pepino...
+              <span>
+                <a class="popular__button">
+                  leer más
+                </a>
+              </span>
+            </p>
+            <div class="flex autor">
+              <a href="#" class="blog__footer">
+                <img src="./assets/about-sushi-title.png" alt="autor">
+              </a>
+              <div class="flex blog__autor">
+                <p class="text-sm font-medium text-gray-900">
+                  <a href="#" class="hover:underline">
+                    Sergio Uh Márquez
+                  </a>
+                </p>
+                <div class="flex space-x-1 text-sm text-gray-500">
+                  <time datetime="2020-03-16">
+                    Dic 01, 2023
+                  </time>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    <section>
+    <section class="suscripcion">
+      <div class="suscripcion__box grid">
+        <div class="suscripcion__content flex">
+          <img src="assets/newsletter-sushi.png" alt="imagen sushi" class="suscripcion__img">
+          <div class="suscripcion__data">
+            <span class="section__subtitle">Suscripción</span>
+            <h2 class="section__title">
+                Suscribete para recibir Noticias<br>
+            </h2>
+            <form action="" class="suscripcion__form">
+                <input type="email" placeholder="Ingresa tu increible email" class="suscripcion__input">
+                <button class="button suscripcion__button">Suscribirse<i class="ri-mail-send-line"></i></button>
+                <img src="assets/spinach-leaf.png" alt="suscripcion imagen" class="suscripcion__spinach">
+            </form>
+          </div>
+        </div>
+      </div>
     </section>
   </main>
-    <!--==================== FOOTER ====================-->
-    <footer class= "footer" id="footer">
-      <div class="footer__box grid">
-          <div class="footer__text">
-              <a href="#" class="footer__logo">
-                  <img src="assets/logo.png" alt="logo image">
-                  RicoSushi
-              </a>
-              <p class="footer__description">
-                Comida para el cuerpo no es suficiente,
-                debe ser para el alma.
-            </p>
-          </div>
-          <div class="footer__content">
-              <div class="footer__block">
-                  <h3 class="footer__title">Menú</h3>
-                  <ul class="footer__links">
-                      <li>
-                          <a href="#" class="footer__link">Acerca de</a>
-                      </li>
-                      <li>
-                          <a href="#" class="footer__link">Nuestro menú</a>
-                      </li>
-                      <li>
-                          <a href="#" class="footer__link">Ofertas</a>
-                      </li>
-                      <li>
-                          <a href="#" class="footer__link">Eventos</a>
-                      </li>
-                  </ul>
-              </div>
-              <div class="footer__block">
-                  <h3 class="footer__title">Información</h3>
-                  <ul class="footer__links">
-                      <li>
-                          <a href="#" class="footer__link">Contacto</a>
-                      </li>
-                      <li>
-                          <a href="#" class="footer__link">Ordenes</a>
-                      </li>
-                      <li>
-                          <a href="#" class="footer__link">Videos</a>
-                      </li>
-                      <li>
-                          <a href="#" class="footer__link">Reservación</a>
-                      </li>
-                  </ul>
-              </div>
-              <div class="footer__block">
-                  <h3 class="footer__title">Dirección</h3>
-                  <ul class="footer__links">
-                      <li class="footer__information">
-                          Av.Galaxias 1 <br> Playa del carmen
-                      </li>
-                      <li class="footer__information">
-                          9am - 10pm
-                      </li>
-                  </ul>
-              </div>
-          </div>
-          <div class="footer__last">
-            <ul class="footer__social">
-                <a href="#" target="_blank" class="footer__social-link">
-                    <i class="ri-facebook-circle-fill"></i>
-                </a>
-                <a href="#" target="_blank" class="footer__social-link">
-                    <i class="ri-instagram-fill"></i>
-                </a>
-                <a href="#" target="_blank" class="footer__social-link">
-                    <i class="ri-twitter-fill"></i>
-                </a>
-            </ul>
-          <div class="footer__card">
-              <img src="assets/footer-card-1.png" alt="footer image">
-              <img src="assets/footer-card-2.png" alt="footer image">
-              <img src="assets/footer-card-3.png" alt="footer image">
-              <img src="assets/footer-card-4.png" alt="footer image">
-          </div>
-          <span class="footer__copy">
-              &#169; Copyright Ancoreweb. All rights reserved
-          </span>
+  <!--==================== FOOTER ====================-->
+  <footer class="footer" id="footer">
+    <div class="footer__box grid">
+      <div class="footer__text">
+        <a href="#" class="footer__logo">
+          <img src="assets/logo.png" alt="logo image">
+          RicoSushi
+        </a>
+        <p class="footer__description">
+          Comida para el cuerpo no es suficiente,
+          debe ser para el alma.
+        </p>
       </div>
+      <div class="footer__content">
+        <div class="footer__block">
+          <h3 class="footer__title">Menú</h3>
+          <ul class="footer__links">
+            <li>
+              <a href="#" class="footer__link">Acerca de</a>
+            </li>
+            <li>
+              <a href="#" class="footer__link">Nuestro menú</a>
+            </li>
+            <li>
+              <a href="#" class="footer__link">Ofertas</a>
+            </li>
+            <li>
+              <a href="#" class="footer__link">Eventos</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__block">
+          <h3 class="footer__title">Información</h3>
+          <ul class="footer__links">
+            <li>
+              <a href="#" class="footer__link">Contacto</a>
+            </li>
+            <li>
+              <a href="#" class="footer__link">Ordenes</a>
+            </li>
+            <li>
+              <a href="#" class="footer__link">Videos</a>
+            </li>
+            <li>
+              <a href="#" class="footer__link">Reservación</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__block">
+          <h3 class="footer__title">Dirección</h3>
+          <ul class="footer__links">
+            <li class="footer__information">
+              Av.Galaxias 1 <br> Playa del carmen
+            </li>
+            <li class="footer__information">
+              9am - 10pm
+            </li>
+          </ul>
+        </div>
       </div>
+      <div class="footer__last">
+        <ul class="footer__social">
+          <a href="#" target="_blank" class="footer__social-link">
+            <i class="ri-facebook-circle-fill"></i>
+          </a>
+          <a href="#" target="_blank" class="footer__social-link">
+            <i class="ri-instagram-fill"></i>
+          </a>
+          <a href="#" target="_blank" class="footer__social-link">
+            <i class="ri-twitter-fill"></i>
+          </a>
+        </ul>
+        <div class="footer__card">
+          <img src="assets/footer-card-1.png" alt="footer image">
+          <img src="assets/footer-card-2.png" alt="footer image">
+          <img src="assets/footer-card-3.png" alt="footer image">
+          <img src="assets/footer-card-4.png" alt="footer image">
+        </div>
+        <span class="footer__copy">
+          &#169; Copyright Ancoreweb. All rights reserved
+        </span>
+      </div>
+    </div>
   </footer>
   <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
